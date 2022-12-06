@@ -1,6 +1,6 @@
 import React from 'react'
-
-function travels()  {
+import ButtonPrim from './btnPrimary'
+function travels(props)  {
 
     const products =  [
 
@@ -40,13 +40,15 @@ const listItems = products.map((number) =>
 );
   return (
     <div className=" travels-home">
-        
-        <ul>
-        
-            {listItems}
-       
-        </ul>
 
+        <img src={props.image} alt="" className="travel-img-home" />
+        <h3 className="sub-header_black">
+                  {props.travelName}
+        </h3>
+
+
+
+      <ButtonPrim text={props.textButton}/>
           </div>
   )
 }

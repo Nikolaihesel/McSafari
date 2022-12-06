@@ -178,3 +178,7 @@ V
 .exp-home button {
   margin: none;
 }
+
+.travel-img-home {
+  max-width: 40%;
+}

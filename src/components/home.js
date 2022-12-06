@@ -59,7 +59,12 @@ function home() {
 
       <div className="video bg-blue-200 h-screen w-screen"> Video</div>
 
-      <Travels />
+
+        <div className="travels-section">
+
+          <Travels image={Offroad} travelName="Rwanda Feb 2023" textButton="Læs mere"/> 
+
+        </div>
 
     </div>
     </div>

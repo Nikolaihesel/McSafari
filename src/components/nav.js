@@ -1,6 +1,10 @@
 import React from 'react'
+
+
 import '../index.css'
 import Logo from '../img_mcsafari/logo.png'
+import { Link } from "react-router-dom";
+import Home from '../components/home'
 
 
 function nav(props) {
@@ -10,10 +14,13 @@ function nav(props) {
 <img className="logo" src={Logo} alt="" />
 
 <ul>
-  <li>Hjem</li>
-  <li>Offroad</li>
-  <li>Rejser</li>
-  <li>Om os</li>
+
+ 
+  <Link to="Home">{props.txt1}</Link>
+  <Link to="Offroad">{props.txt2}</Link>
+  <Link to="Rejser">{props.txt3}</Link>
+  <Link to="About">{props.txt4}</Link>
+
 </ul>
 
       
