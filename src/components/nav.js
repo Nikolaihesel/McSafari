@@ -1,6 +1,6 @@
 import React from 'react'
 import '../index.css'
-import Logo from '../img_mcsafari/mcsafari_logo_temp.svg'
+import Logo from '../img_mcsafari/logo.png'
 
 
 function nav(props) {

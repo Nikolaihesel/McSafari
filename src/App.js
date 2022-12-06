@@ -14,9 +14,7 @@ function App() {
         <Nav />
         <Home />
 
-      <ButtonPrim  text='Offroad'/>
-      <SectionHeader title="oplevelser"/>
-      <SectionHeader title="Offroad"/>
+     
 
 
 
