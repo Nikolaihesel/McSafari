@@ -34,16 +34,18 @@ function travels()  {
 
         ]
 
-    
-        
-
+const listItems = products.map((number) =>
+  <li>{number.place}</li>
+ 
+);
   return (
     <div className=" travels-home">
         
-
-        {products.map(() => {
-            <p> {products.id}</p>
-        })}
+        <ul>
+        
+            {listItems}
+       
+        </ul>
 
           </div>
   )
