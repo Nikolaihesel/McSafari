@@ -39,17 +39,13 @@ const listItems = products.map((number) =>
  
 );
   return (
-    <div className=" travels-home">
+    <div className=" travels-home flex-col justify-start  ">
 
         <img src={props.image} alt="" className="travel-img-home" />
-        <h3 className="sub-header_black">
-                  {props.travelName}
-        </h3>
-
-
-
-      <ButtonPrim text={props.textButton}/>
-          </div>
+        <h3 className="sub-header_black">  {props.travelName}  </h3>
+      <ButtonPrim link={props.link} text={props.textButton}/>
+          
+      </div>
   )
 }
 

@@ -29,9 +29,9 @@ function home() {
       </h1>
      <h2 className="sub-header mx-w40">McSafari giver dig unikke oplevelser på motorcykel, du aldrig havde drømt om </h2>
 
-       <div className="row-container gap-20 mt-2">
-        <ButtonPrim text="Offroad" />
-        <ButtonPrim text="Rejser" />
+       <div className="row-container-btn-home">
+        <ButtonPrim link="Offroad" text="Offroad" />
+        <ButtonPrim link="Rejser" text="Rejser" />
        </div>
        
     </div>
@@ -43,7 +43,7 @@ function home() {
     <div className="experiences">
       <SectionHeader title="Oplevelser" />
 
-      <div className=" exp-home">
+      <div className=" exp-home ">
 
       <Experinces header="Offroad"  img={Travel} text=" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  "
 
@@ -51,19 +51,42 @@ function home() {
 
       <Experinces header="Offroad"  img={Travel} text=" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  "
 
-      btntxt="Læs mere" />
+        btntxt="Læs mere" />
 
       </div>
-
+  
 
 
       <div className="video bg-blue-200 h-screen w-screen"> Video</div>
 
 
-        <div className="travels-section">
+       <div className="mt-20 mb-20">
+            <SectionHeader  title="Rejser"/>
 
-          <Travels image={Offroad} travelName="Rwanda Feb 2023" textButton="Læs mere"/> 
+            </div>
 
+
+        <div className="travels-section flex flex-row justify-evenly align-middle mt-10 flex-wrap gap-20">
+
+          <Travels image={Offroad} travelName="Rwanda Feb 2023" textButton="Læs mere" link="Offroad"/> 
+          <Travels image={Offroad} travelName="Rwanda Feb 2023" textButton="Læs mere" link="Offroad"/> 
+          <Travels image={Offroad} travelName="Rwanda Feb 2023" textButton="Læs mere" link="Offroad"/> 
+          <Travels image={Offroad} travelName="Rwanda Feb 2023" textButton="Læs mere" link="Offroad"/> 
+       
+
+        </div>
+
+
+
+        <div className="about-mcsafari-home">
+
+          <h3 className="sub-header">McSafari</h3><br />
+          <h4 className="sub-header">Vi leverer unikke oplevelser til alle!</h4>
+          <p className="paragraph_white about-mc-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque expedita, ducimus eius inventore sed in totam provident mollitia illum eos. Rem, atque. Voluptatum itaque labore ipsum suscipit nam minima saepe. Iste saepe obcaecati enim fugiat animi dolores voluptatibus magni est eum minus repellendus consectetur neque laudantium,
+          
+        quo inventore labore dolorum perferendis atque, eos nesciunt rerum illum aliquid! Esse reprehenderit, minima fugit eligendi iste velit itaque totam enim iure fuga perferendis quo at maiores doloribus eaque illo nemo quia fugiat! Est harum cumque reprehenderit autem quas placeat, illum necessitatibus odit eos
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, veniam nam sequi a adipisci facere, at velit praesentium voluptate maiores voluptatum. Facilis tenetur asperiores maxime! Assumenda quia autem doloremque nisi nobis repudiandae reiciendis sit, deleniti quidem mollitia, quis impedit reprehenderit? Esse iusto fugiat quibusdam quos voluptatum, ullam, laborum quasi, minus quisquam tenetur voluptates nulla a. Porro sequi eum iusto id vero, cumque facilis labore alias repellendus vitae? Doloribus perspiciatis illum laudantium quibusdam, reiciendis esse expedita, saepe magnam cumque ut voluptatum quidem dignissimos illo, aperiam natus accusamus itaque. Cupiditate, unde, pariatur alias eos maiores libero sapiente fuga animi, porro voluptatum quasi.</p>
         </div>
 
     </div>

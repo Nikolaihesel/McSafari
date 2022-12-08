@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: none;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+$fontPrimary: "poppins";
+
+$sizeParagraph: 20px;
+$sizeSubheader: 32px;
+$sizeHeader: 42px;
+
+  $fw300: 300;
+  $fw400: 400;
+  $fw500: 500;
+  $fw600: 600;
+  $fw700: 700;
+  $fw800: 800;
+  $fw900: 900;
+
+  $colorPeachy: #ea9073;
+  $colorBeige: #c9af98;
+  $colorWhite: #f2f3f7;
+  $colorBlack: #272727;
+
+
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 4em;
+
+  font-family: $fontPrimary;;
+  font-size: $sizeParagraph;;
+  font-weight: $fw500;
+  color: $colorWhite;
+    
+    
+  ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  white-space: nowrap;
+  flex: 2;
+}
+}
+
+
+
+.logo {
+  max-width: 300px;
+  flex: 1;
+}
+
+.btn-prim {
+  padding: 0.5em 1em;
+  font-size: $sizeParagraph;
+  font-family: $fontPrimary;
+  font-weight: $fw400;
+  color: $colorWhite;
+  background: $colorPeachy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  max-height: fit-content;
+  border: none;
+
+}
+
+.no-decoration{
+    text-decoration: none;
+}
+
+/* Section header styling
+
+Text and paragraph
+||
+V
+*/
+
+.section-header {
+  font-family: $fontPrimary;
+  font-size: $sizeSubheader;
+  font-weight: $fw500;
+  color: $colorBlack;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header-hr {
+  width: 40%;
+  height: 3px;
+  background: $colorBlack;
+  border-radius: 80%;
+}
+
+.hero_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  max-width: 100vw;
+}
+
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.prim-header {
+  font-family: $fontPrimary;
+  font-size: $sizeHeader;
+  color: $colorWhite;
+  font-weight: $fw600;
+}
+
+.sub-header {
+  font-family: $fontPrimary;
+  font-size: $sizeSubheader;
+  color: $colorWhite;
+  font-weight: $fw400;
+}
+.sub-header_black {
+  font-family: $fontPrimary;
+  font-size: $sizeSubheader;
+  color: $colorBlack;
+  font-weight: $fw400;
+}
+
+.paragraph {
+  font-family: $fontPrimary;
+  font-size: $sizeParagraph;
+  color: $colorBlack;
+  text-align: left;
+  max-width: 48ch;
+}
+.paragraph_white {
+  font-family: $fontPrimary;
+  font-size: $sizeParagraph;
+  color: $colorWhite;
+  text-align: left;
+  max-width: 48ch;
+  text-decoration: none;
+}
+
+.mx-w40 {
+  max-width: 40ch;
+}
+
+.flex-1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* *********** HOME ************ */
+
+.heading-home {
+  flex: 5;
+}
+
+.home-flex-container-hero {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  margin-left: 10%;
+  margin-top: 20vh;
+
+  text-align: left;
+}
+
+.row-container-btn-home{
+  display: flex;
+  flex-direction: row;
+    gap: 5em;
+    margin: 1em 0;
+
+}
+
+.exp-home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 4rem 0;
+  flex-wrap: wrap;
+
+
+}
+
+.travel-img-home {
+  max-width: 800px;
+  max-height: 230px;
+}
+
+.about-mcsafari-home {
+  background: $colorBeige;
+  margin: 4rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-mc-paragraph {
+  column-count: 2;
+  column-gap: 3rem;
+  max-width: 100ch;
+}
+
+.travels-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em 0;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+/* Footer  */
+
+.top-footer {
+  background-color: $colorBlack;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 0;
+  li {
+  font-family: $fontPrimary;
+  font-size: $sizeParagraph;
+  color: $colorWhite;
+  list-style-type: none;
+  margin: 1em 0;
+  }
+}
+
+
+.bottom-footer {
+  background-color: $colorBeige;
+  margin: 0;
+    text-align: center;
+}

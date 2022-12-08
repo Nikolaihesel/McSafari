@@ -14,13 +14,10 @@ function nav(props) {
 <img className="logo" src={Logo} alt="" />
 
 <ul>
-
- 
-  <Link to="Home">{props.txt1}</Link>
-  <Link to="Offroad">{props.txt2}</Link>
-  <Link to="Rejser">{props.txt3}</Link>
-  <Link to="About">{props.txt4}</Link>
-
+  <Link  className="paragraph_white" to="Home">{props.txt1}</Link>
+  <Link  className="paragraph_white" to="Offroad">{props.txt2}</Link>
+  <Link   className="paragraph_white" to="Rejser">{props.txt3}</Link>
+  <Link  className="paragraph_white"  to="About">{props.txt4}</Link>
 </ul>
 
       
