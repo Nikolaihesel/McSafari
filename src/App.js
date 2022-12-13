@@ -8,7 +8,7 @@ import Footer from './components/footer'
 import Home from './components/home'
 import About from './components/about'
 import Offroad from './components/offroad'
-import Rejser from './components/rejser'
+import Rejser from './components/Rejser'
 
 
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../index.css';
+import { useState, useEffect } from 'react';
+
 
 import Hero from '../img_mcsafari/rejse1.png';
 import rejse2 from '../img_mcsafari/rejse2.png'
@@ -12,10 +14,37 @@ import ButtonPrim from './btnPrimary';
 import AboutStefan from './omStefan';
 
 
-function rejser() {
+import {db} from '../firebase-config';
+import {collection, getDocs, addDoc} from 'firebase/firestore';
+
+
+
+
+function Rejser() {
+  const [newTrip, setNewTrip] = useState('');
+  const [newDate, setNewDate] = useState(0);
+  const [trips, setTrips] = useState([]);
+  const tripsCollectionRef = collection(db, 'Products')
+
+
+const createTrip = async () => {
+
+await addDoc(tripsCollectionRef, {location: newTrip, date: newDate})
+
+}
+
+
+
+useEffect(() => {
+const getTrips = async () => {
+
+  const data = await getDocs(tripsCollectionRef);
+  setTrips(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
+
+};
+getTrips();
+}, [] )
   return (
-
-
        <div>
         <div className="header-container"> 
           </div> 
@@ -46,8 +75,25 @@ function rejser() {
     <Travels image={rejse4} travelName="Rwanda" link="home" textButton="Book nu" />
 
 
+    
     </div>
 
+      <input onChange={(event) => {setNewTrip(event.target.value)}} placeholder="location" />
+      <input onChange={(event) => {setNewDate(event.target.value)}}  type="number" placeholder="date" />
+
+
+    <button onClick={createTrip}> Create trip </button>
+    {trips.map( (trip) => {
+      return (
+        <div>
+          {" "}
+          <h1>{trip.date}</h1>
+          <h1>{trip.location}</h1>
+           </div>
+      )
+    } )}
+
+     
     </div>
 
 
@@ -59,4 +105,4 @@ function rejser() {
   )
 }
 
-export default rejser
+export default Rejser
