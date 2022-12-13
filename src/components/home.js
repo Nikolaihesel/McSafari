@@ -66,7 +66,7 @@ function home() {
             </div>
 
 
-        <div className="travels-section flex flex-row justify-evenly align-middle mt-10 flex-wrap gap-20">
+        <div className="travels-section">
 
           <Travels image={Offroad} travelName="Rwanda Feb 2023" textButton="Læs mere" link="Offroad"/> 
           <Travels image={Offroad} travelName="Rwanda Feb 2023" textButton="Læs mere" link="Offroad"/> 

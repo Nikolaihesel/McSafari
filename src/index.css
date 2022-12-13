@@ -93,6 +93,13 @@ ol, ul {
   text-decoration: none;
 }
 
+.video {
+  height: 100vh;
+  width: 100vw;
+  background-color: blanchedalmond;
+  margin: 4rem 0;
+}
+
 /* Section header styling
 
 Text and paragraph
@@ -104,6 +111,27 @@ V
   font-size: 32px;
   font-weight: 500;
   color: #272727;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.white-section-header {
+  font-family: "poppins";
+  font-size: 32px;
+  font-weight: 500;
+  color: #f2f3f7;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +161,41 @@ V
   left: 0;
   z-index: -1;
   max-width: 100vw;
+}
+
+.header-container {
+  height: 60vh;
+}
+
+.hero-subpages {
+  width: 100vw;
+}
+
+.hero-subpages img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  max-width: 100vw;
+}
+
+.header-text {
+  width: 100vw;
+  height: 100%;
+  background: #c9af98;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m-4rem {
+  margin: 4rem 0;
 }
 
 .column-container {
@@ -183,6 +246,15 @@ V
   text-decoration: none;
 }
 
+.paragraph_white_wide {
+  font-family: "poppins";
+  font-size: 20px;
+  color: #f2f3f7;
+  text-align: left;
+  max-width: 80ch;
+  text-decoration: none;
+}
+
 .mx-w40 {
   max-width: 40ch;
 }
@@ -198,6 +270,71 @@ V
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.column-container {
+  gap: 20px;
+}
+
+.about-stefan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10%;
+  background-color: #c9af98;
+  width: 100vw;
+  height: 100vh;
+  margin: 3rem 0;
+}
+
+.about-stefan .left-about-stefan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  height: 60%;
+}
+
+.about-stefan .left-about-stefan img {
+  max-width: 400px;
+}
+
+.about-stefan .right-about-stefan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  height: 60%;
+}
+
+.about-stefan .right-about-stefan p {
+  max-width: 40ch;
+  color: #f2f3f7;
+  font-weight: 300;
+  font-family: "poppins";
+  font-size: 20px;
+}
+
+.about-stefan .right-about-stefan img {
+  max-width: 400px;
 }
 
 /* *********** HOME ************ */
@@ -246,6 +383,11 @@ V
   margin: 4rem 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 20px;
+}
+
+.travels-home {
+  gap: 20px;
 }
 
 .travel-img-home {
@@ -312,7 +454,6 @@ V
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 0;
 }
 
 .top-footer li {
@@ -325,7 +466,101 @@ V
 
 .bottom-footer {
   background-color: #c9af98;
-  margin: 0;
+}
+
+.bottom-footer p {
   text-align: center;
+  width: 100vw;
+}
+
+.hero-subpage_test {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.paragraph-hero-subpage {
+  width: 100vw;
+  padding: 2rem;
+  background: #c9af98;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.paragraph-hero-subpage p {
+  font-family: "poppins";
+  font-size: 20px;
+  color: #f2f3f7;
+  text-align: left;
+}
+
+.three-piece-offroad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.three-piece-offroad p {
+  font-family: "poppins";
+  font-size: 20px;
+  color: #272727;
+  text-align: center;
+}
+
+.three-piece-offroad .paragraph-offroad-day {
+  text-align: center;
+  max-width: 40ch;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "poppins";
+}
+
+.three-piece-offroad .three-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 300px;
+  gap: 1rem;
+  margin: 4rem 6rem;
+}
+
+.three-piece-offroad .img-offroad-dag {
+  max-width: 300px;
 }
 /*# sourceMappingURL=index.css.map */

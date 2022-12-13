@@ -40,6 +40,7 @@ $sizeHeader: 42px;
 
 
 .nav {
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,6 +89,13 @@ $sizeHeader: 42px;
     text-decoration: none;
 }
 
+.video{
+  height: 100vh;
+  width: 100vw;
+  background-color: blanchedalmond;
+  margin: 4rem 0;
+}
+
 /* Section header styling
 
 Text and paragraph
@@ -100,6 +108,17 @@ V
   font-size: $sizeSubheader;
   font-weight: $fw500;
   color: $colorBlack;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.white-section-header {
+  font-family: $fontPrimary;
+  font-size: $sizeSubheader;
+  font-weight: $fw500;
+  color: $colorWhite;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -122,6 +141,35 @@ V
   max-width: 100vw;
 }
 
+.header-container{
+  height: 60vh;
+}
+
+.hero-subpages{
+  width: 100vw;
+
+  img{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  max-width: 100vw;
+  }
+}
+
+.header-text{
+  width: 100vw;
+  height: 100%;
+  background: $colorBeige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.m-4rem{
+  margin: 4rem 0;
+}
 
 .column-container {
   display: flex;
@@ -163,6 +211,14 @@ V
   max-width: 48ch;
   text-decoration: none;
 }
+.paragraph_white_wide {
+  font-family: $fontPrimary;
+  font-size: $sizeParagraph;
+  color: $colorWhite;
+  text-align: left;
+  max-width: 80ch;
+  text-decoration: none;
+}
 
 .mx-w40 {
   max-width: 40ch;
@@ -173,6 +229,59 @@ V
   display: flex;
   flex-direction: column;
 }
+
+.column-container{
+  gap: 20px;
+}
+
+
+.about-stefan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+
+  background-color: $colorBeige;
+  width: 100vw;
+  height: 100vh;
+  margin: 3rem 0;
+
+
+  .left-about-stefan{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 60%;
+    
+    img{
+      max-width: 400px;
+    }
+  }
+
+  .right-about-stefan{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 60%;
+
+    p {
+      max-width: 40ch;
+      color: $colorWhite;
+      font-weight: 300;
+      font-family: $fontPrimary;
+      font-size: $sizeParagraph;
+    }
+
+    img{
+      max-width: 400px;
+    }
+  }
+
+}
+
+
 
 /* *********** HOME ************ */
 
@@ -204,8 +313,12 @@ V
   align-items: center;
   margin: 4rem 0;
   flex-wrap: wrap;
+  gap: 20px;
 
 
+}
+.travels-home{
+  gap: 20px;
 }
 
 .travel-img-home {
@@ -246,7 +359,7 @@ V
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin: 0;
+
   li {
   font-family: $fontPrimary;
   font-size: $sizeParagraph;
@@ -259,6 +372,88 @@ V
 
 .bottom-footer {
   background-color: $colorBeige;
-  margin: 0;
+
+
+  p{
     text-align: center;
+    width: 100vw;
+  }
 }
+
+
+// offRoad starts here
+
+.hero-subpage_test {
+width: 100vw;
+height: 100vh; 
+position: absolute;
+top: 0;
+z-index: -1;
+}
+
+.paragraph-hero-subpage{
+
+  width: 100vw;
+  padding: 2rem;
+  background: $colorBeige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  p{
+
+  font-family: $fontPrimary;
+  font-size: $sizeParagraph;
+  color: $colorWhite;
+  text-align: left;
+  }
+}
+
+.three-piece-offroad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+  p {
+  font-family: $fontPrimary;
+  font-size: $sizeParagraph;
+  color: $colorBlack;
+  text-align: center;
+}
+
+
+.paragraph-offroad-day{
+  text-align: center;
+  max-width: 40ch;
+  font-size: $sizeParagraph;
+  font-weight: $fw500;
+  font-family: $fontPrimary;
+}
+
+  .three-container{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 300px;
+  gap: 1rem;
+  margin: 4rem 6rem;
+  }
+
+  .img-offroad-dag{
+
+    max-width: 300px;
+  }
+
+
+}
+
+
+
+

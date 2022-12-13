@@ -12,12 +12,6 @@ function imgTxtBtn(props) {
             <img className=" w50 " src={props.img} alt="" />
             <p className="paragraph" > {props.text}</p>
             <ButtonPrim text={props.btntxt}/>
-
-
-             
-
-    
-    
      </div>
   )
 }

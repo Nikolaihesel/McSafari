@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonPrim from './btnPrimary'
+import  '../index.css'
 function travels(props)  {
 
     const products =  [
@@ -39,7 +40,7 @@ const listItems = products.map((number) =>
  
 );
   return (
-    <div className=" travels-home flex-col justify-start  ">
+    <div className=" travels-home   ">
 
         <img src={props.image} alt="" className="travel-img-home" />
         <h3 className="sub-header_black">  {props.travelName}  </h3>
