@@ -563,4 +563,61 @@ V
 .three-piece-offroad .img-offroad-dag {
   max-width: 300px;
 }
+
+.container-mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 6rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.container-mission .mission-rejser h3 {
+  font-family: "poppins";
+  font-size: 32px;
+  color: #272727;
+  font-weight: 600;
+}
+
+.container-mission .mission-rejser p {
+  max-width: 50ch;
+  font-family: "poppins";
+  font-size: 20px;
+  color: #272727;
+}
+
+.container-mission img {
+  max-width: 600px;
+}
+
+.products-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10%;
+}
+
+.products-container > {
+  margin: 2rem 0;
+}
 /*# sourceMappingURL=index.css.map */
