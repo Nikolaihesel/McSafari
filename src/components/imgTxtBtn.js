@@ -4,7 +4,7 @@ import ButtonPrim from './btnPrimary'
 
 function imgTxtBtn(props) {
   return (
-    <div className="column-container">  
+    <div className="exp-offroad-column">  
 
         <h2 className="sub-header_black">
             {props.header}

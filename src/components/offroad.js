@@ -25,7 +25,7 @@ function offroad() {
       <div className=" paragraph-hero-subpage">
          <SubHeader title="Offroad hver lørdag!"/>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est maiores vero, reiciendis, optio eos suscipit ipsa et quis magni inventore tempore? Quasi quod facilis, consequuntur itaque adipisci enim architecto autem dolorum tempora libero pariatur necessitatibus atque recusandae asperiores magni similique unde quibusdam! Mollitia quas dicta amet tempore error eaque repudiandae temporibus obcaecati ut illum iste consectetur laboriosam quis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est maiores vero, reiciendis, optio eos suscipit ipsa et quis magni inventore tempore? Quasi quod facilis, consequuntur itaque adipisci enim architecto autem dolorum tempora libero pariatur necessitatibus atque recusandae </p>
 
         <ButtonPrim text="Læs mere" link="Offroad" />
       </div>

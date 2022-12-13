@@ -26,11 +26,13 @@ function rejser() {
       <div className=" paragraph-hero-subpage">
          <SubHeader title="Rejser du ikke vil glemme!"/>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est maiores vero, reiciendis, optio eos suscipit ipsa et quis magni inventore tempore? Quasi quod facilis, consequuntur itaque adipisci enim architecto autem dolorum tempora libero pariatur necessitatibus atque recusandae asperiores magni similique unde quibusdam! Mollitia quas dicta amet tempore error eaque repudiandae temporibus obcaecati ut illum iste consectetur laboriosam quis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est maiores vero, reiciendis, optio eos suscipit ipsa et quis magni inventore tempore? Quasi quod facilis, consequuntur itaque adipisci enim architecto autem dolorum tempora libero pariatur. </p>
 
         <ButtonPrim text="Læs mere" link="Offroad" />
     </div>
 
+
+    <div className="destination-container">
 
     <SubHeader title="Rejsedestinationer" />
 
@@ -43,6 +45,8 @@ function rejser() {
     <Travels image={rejse3} travelName="Rwanda" link="home" textButton="Book nu" />
     <Travels image={rejse4} travelName="Rwanda" link="home" textButton="Book nu" />
 
+
+    </div>
 
     </div>
 
