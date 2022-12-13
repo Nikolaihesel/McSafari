@@ -617,7 +617,7 @@ V
   gap: 10%;
 }
 
-.products-container > {
+.products-container > * {
   margin: 2rem 0;
 }
 /*# sourceMappingURL=index.css.map */
