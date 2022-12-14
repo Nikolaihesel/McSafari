@@ -73,14 +73,12 @@ getTrips();
 
     <Travels image={rejse2} travelName={[trip.location, trip.date]} link="home" textButton="Book nu" />
      )  })}
-
-     
-    {/* <Travels image={rejse3} travelName="Rwanda" link="home" textButton="Book nu" />
+    <Travels image={rejse3} travelName="Rwanda" link="home" textButton="Book nu" />
     <Travels image={rejse4} travelName="Rwanda" link="home" textButton="Book nu" />
     <Travels image={rejse2} travelName="Rwanda" link="home" textButton="Book nu" />
     <Travels image={rejse3} travelName="Rwanda" link="home" textButton="Book nu" />
     <Travels image={rejse4} travelName="Rwanda" link="home" textButton="Book nu" />
- */}
+
 
     
     </div>
@@ -90,11 +88,6 @@ getTrips();
 
 
     <button onClick={createTrip}> Create trip </button>
-   
-   
-   
-   
-   
     {trips.map( (trip) => {
       return (
         <div>
@@ -104,11 +97,6 @@ getTrips();
            </div>
       )
     } )}
-
-
-
-
-
 
      
     </div>

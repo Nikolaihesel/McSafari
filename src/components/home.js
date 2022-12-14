@@ -7,12 +7,12 @@ import Travels from './travels'
 
 //img
 import Exp1 from '../img_mcsafari/exp1offroad.png'
-import Exp2 from '../img_mcsafari/exp2offroad.png'
 import Hero from '../img_mcsafari/hero_mcsafari.png'
 import Offroad from '../img_mcsafari/Enduro1_moss.jpeg'
 import Travel from '../img_mcsafari/rejser.jpeg'
 
 function home() {
+
   return (
     <div className="home">
     <div className="hero-container">
@@ -54,7 +54,7 @@ function home() {
 
       btntxt="Læs mere" />
 
-      <Experinces header="Offroad"  img={Exp2} text=" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  "
+      <Experinces header="Offroad"  img={Exp1} text=" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  "
 
         btntxt="Læs mere" />
 

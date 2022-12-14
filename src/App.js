@@ -9,6 +9,7 @@ import Home from './components/home'
 import About from './components/about'
 import Offroad from './components/offroad'
 import Rejser from './components/Rejser'
+import Gui from './components/Gui'
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="Offroad" element={ <Offroad/> } />
         <Route path="Rejser" element={ <Rejser/> } />
         <Route path="About" element={ <About/> } />
+        <Route path="Gui" element={ <Gui/> } />
     </Routes>
 <Footer />
   </div>
