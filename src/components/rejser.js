@@ -67,13 +67,20 @@ getTrips();
 
     <div className="products-container">
 
-    <Travels image={rejse2} travelName="Rwanda" link="home" textButton="Book nu" />
-    <Travels image={rejse3} travelName="Rwanda" link="home" textButton="Book nu" />
-    <Travels image={rejse4} travelName="Rwanda" link="home" textButton="Book nu" />
-    <Travels image={rejse2} travelName="Rwanda" link="home" textButton="Book nu" />
-    <Travels image={rejse3} travelName="Rwanda" link="home" textButton="Book nu" />
-    <Travels image={rejse4} travelName="Rwanda" link="home" textButton="Book nu" />
+      {trips.map((trip) => {
 
+   return(
+
+    <Travels image={rejse2} travelName={[trip.location, trip.date]} link="home" textButton="Book nu" />
+     )  })}
+
+     
+    {/* <Travels image={rejse3} travelName="Rwanda" link="home" textButton="Book nu" />
+    <Travels image={rejse4} travelName="Rwanda" link="home" textButton="Book nu" />
+    <Travels image={rejse2} travelName="Rwanda" link="home" textButton="Book nu" />
+    <Travels image={rejse3} travelName="Rwanda" link="home" textButton="Book nu" />
+    <Travels image={rejse4} travelName="Rwanda" link="home" textButton="Book nu" />
+ */}
 
     
     </div>
@@ -83,15 +90,25 @@ getTrips();
 
 
     <button onClick={createTrip}> Create trip </button>
+   
+   
+   
+   
+   
     {trips.map( (trip) => {
       return (
         <div>
           {" "}
-          <h1>{trip.date}</h1>
           <h1>{trip.location}</h1>
+         
            </div>
       )
     } )}
+
+
+
+
+
 
      
     </div>
