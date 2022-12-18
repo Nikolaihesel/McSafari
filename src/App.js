@@ -1,9 +1,12 @@
 import './App.css';
 import './index.css'
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Link } from "react-router-dom"
+
 // Componenets
 import Nav from './components/nav'
 import Footer from './components/footer'
+import Logo from './img_mcsafari/logo.png'
+
 // pages
 import Home from './components/home'
 import About from './components/about'
@@ -14,13 +17,30 @@ import Gui from './components/Gui'
 
 
 
+
 function App() {
   return (
     <div className="App">
-        <Nav txt1="Hjem" txt2="Offroad" txt3="Rejser" txt4="Om os"/>
+       <nav className="nav">
+
+<img className="logo" src={Logo} alt="" />
+
+<ul>
+
+  <li><Link to="/" className="paragraph_white"  >Hjem</Link> </li>
+  <li><Link to="Offroad" className="paragraph_white" >Offroad</Link> </li>
+  <li><Link to="Rejser" className="paragraph_white">Rejser</Link> </li>
+  <li> <Link to="About" className="paragraph_white">Om os</Link> </li>
+  
+</ul>
+
+      
+
+
+    </nav>
 
 <Routes>
-        <Route path="/Home" element={ <Home/> } />
+        <Route path="/" element={ <Home/> } />
         <Route path="Offroad" element={ <Offroad/> } />
         <Route path="Rejser" element={ <Rejser/> } />
         <Route path="About" element={ <About/> } />
