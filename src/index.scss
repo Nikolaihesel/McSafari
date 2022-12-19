@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 *, *:before, *:after{
     box-sizing: border-box;
 }
@@ -95,6 +95,12 @@ $sizeHeader: 42px;
   width: 100vw;
   background-color: blanchedalmond;
   margin: 4rem 0;
+
+  iframe{
+  width: 100vw;
+  height: 100vh;
+}
+
 }
 
 /* Section header styling
@@ -336,6 +342,7 @@ background-color: $colorBeige;
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  gap: 20px;
   
   h2{
     text-align: center;
@@ -394,6 +401,21 @@ background-color: $colorBeige;
   list-style-type: none;
   margin: 1em 0;
   }
+
+  h3{
+
+    margin: 1em 0;
+    border: red solid 3px;
+  
+  }
+
+  ul{
+  li{
+    font-weight: 200;
+  }
+  }
+
+
 }
 
 

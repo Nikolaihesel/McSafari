@@ -399,6 +399,7 @@ V
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 500px;
+  gap: 20px;
 }
 
 .exp-offroad-column h2 {
@@ -480,6 +481,10 @@ V
   font-size: 20px;
   color: #f2f3f7;
   list-style-type: none;
+  margin: 1em 0;
+}
+
+.top-footer h3 {
   margin: 1em 0;
 }
 
