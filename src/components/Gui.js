@@ -27,21 +27,23 @@ function Gui() {
 	}, []);
 	return (
 		<div>
-			<input
-				onChange={(event) => {
-					setNewTrip(event.target.value);
-				}}
-				placeholder='location'
-			/>
-			<input
-				onChange={(event) => {
-					setNewDate(event.target.value);
-				}}
-				type='number'
-				placeholder='date'
-			/>
+			<div className='gui-style'>
+				<input
+					onChange={(event) => {
+						setNewTrip(event.target.value);
+					}}
+					placeholder='location'
+				/>
+				<input
+					onChange={(event) => {
+						setNewDate(event.target.value);
+					}}
+					type='number'
+					placeholder='date'
+				/>
 
-			<button onClick={createTrip}> Create trip </button>
+				<button onClick={createTrip}> Create trip </button>
+			</div>
 
 			<div className='products-container'>
 				{trips.map((trip) => {
