@@ -26,7 +26,22 @@ function Gui() {
 		getTrips();
 	}, []);
 	return (
-		<div>
+		<div className='gui'>
+			<div className='travels-gui'>
+				<div className='products-container'>
+					{trips.map((trip) => {
+						return (
+							<Travels
+								image={rejse2}
+								travelName={trip.location}
+								date={trip.date}
+								link='home'
+								textButton='Book nu'
+							/>
+						);
+					})}
+				</div>
+			</div>
 			<div className='gui-style'>
 				<input
 					onChange={(event) => {
@@ -38,34 +53,17 @@ function Gui() {
 					onChange={(event) => {
 						setNewDate(event.target.value);
 					}}
-					type='number'
+					type='text'
 					placeholder='date'
 				/>
 
-				<button onClick={createTrip}> Create trip </button>
+				<button
+					className='btn-prim'
+					onClick={createTrip}>
+					{' '}
+					Create trip{' '}
+				</button>
 			</div>
-
-			<div className='products-container'>
-				{trips.map((trip) => {
-					return (
-						<Travels
-							image={rejse2}
-							travelName={[trip.location, trip.date]}
-							link='home'
-							textButton='Book nu'
-						/>
-					);
-				})}
-			</div>
-
-			{trips.map((trip) => {
-				return (
-					<div>
-						{' '}
-						<h1>{trip.location}</h1>
-					</div>
-				);
-			})}
 		</div>
 	);
 }

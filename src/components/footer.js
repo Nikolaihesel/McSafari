@@ -9,7 +9,7 @@ function footer() {
 				<div className='left-wrap-footer '>
 					<h3 className='sub-header'>Kontakt</h3>
 					<ul>
-						<li>Stefan Jensen</li>
+						<li>Stefan Jacobsen</li>
 						<li> Mail@mail.com</li>
 						<li>Telefon: 20202020</li>
 					</ul>

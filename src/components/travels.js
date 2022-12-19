@@ -9,7 +9,10 @@ function travels(props) {
 				alt=''
 				className='travel-img-home'
 			/>
+
 			<h3 className='sub-header_black'> {props.travelName} </h3>
+			<h3 className='sub-header_black'> {props.date} </h3>
+
 			<ButtonPrim
 				link={props.link}
 				text={props.textButton}

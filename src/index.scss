@@ -377,7 +377,11 @@ V
 }
 
 .travels-home {
-	gap: 20px;
+	gap: 10px;
+}
+.column-travel-auto {
+	display: flex;
+	flex-direction: column;
 }
 
 .travel-img-home {
@@ -578,4 +582,35 @@ V
 			width: 40vw;
 		}
 	}
+}
+
+.gui {
+	display: flex;
+	flex-direction: row;
+}
+
+.gui-style {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	height: 100vh;
+	width: 30vw;
+	background: $colorBeige;
+	padding: 2rem;
+
+	input {
+		width: 100%;
+		height: 2rem;
+		border-radius: 10px;
+		border: 0.5px solid #25211d;
+		padding: 4px;
+	}
+}
+
+.travels-gui {
+	width: 70vw;
+	overflow: auto;
+	max-height: 80vh;
 }
