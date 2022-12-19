@@ -14,7 +14,6 @@ import rejse2 from '../img_mcsafari/rejse2.png';
 //img
 import Exp1 from '../img_mcsafari/exp1offroad.png';
 import Hero from '../img_mcsafari/hero_mcsafari.png';
-import Offroad from '../img_mcsafari/Enduro1_moss.jpeg';
 import Travel from '../img_mcsafari/rejser.jpeg';
 
 function Home() {
@@ -22,10 +21,6 @@ function Home() {
 	const [newDate, setNewDate] = useState(0);
 	const [trips, setTrips] = useState([]);
 	const tripsCollectionRef = collection(db, 'Products');
-
-	const createTrip = async () => {
-		await addDoc(tripsCollectionRef, { location: newTrip, date: newDate });
-	};
 
 	useEffect(() => {
 		const getTrips = async () => {
@@ -68,8 +63,8 @@ function Home() {
 				</div>
 			</div>
 
-<br/>
-<br/>
+			<br />
+			<br />
 
 			<div className='experiences'>
 				<SectionHeader title='Oplevelser' />
@@ -80,7 +75,7 @@ function Home() {
 						img={Exp1}
 						text=' Hos McSafari tilbyder vi Offroad skole og lege dage på motorcykel! Alle kan være med og det kræver ikke kørekort eller tidligere erfaring på MC! Vi stiller motorcykler til rådighed og lærer dig hvordan du sikkert kan køre i alt terræn. '
 						btntxt='Læs mere'
-						link="Offroad"
+						link='Offroad'
 					/>
 
 					<Experinces
@@ -88,7 +83,7 @@ function Home() {
 						img={Travel}
 						text=' Hos McSafari tilbyder vi mange forskellige rejser til unikke og spændende destinationer! Vi tilbyder  guides, der både begår sig på det loakle sprog, samt dansk!    '
 						btntxt='Læs mere'
-						link="Rejser"
+						link='Rejser'
 					/>
 				</div>
 

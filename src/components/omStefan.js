@@ -2,7 +2,6 @@ import React from 'react';
 
 import '../index.css';
 
-import ButtonPrim from './btnPrimary';
 import StefanL from '../img_mcsafari/stefanl.png';
 import StefanR from '../img_mcsafari/stefanr.png';
 import SubHeader from './sectionHeader';
@@ -32,7 +31,13 @@ function omStefan(props) {
 
 					<div className='right-about-stefan'>
 						<p>
-							Stefan jacobsen er indehaver af McSafari. Stefan er opvokset i Tanzania, men med stærke danske rødder har han nu bosat sig på fyn. Stefan har kørt motorcykel hele hans voksne liv og er både instruktør på offroad skolen, samt guide på mange af de ture McSafari tilbyder! Udover at være en formidal guide og underviser snakker han også flydende Swahilli, hvilket ofte viser sig som en fordel på vores rejser
+							Stefan jacobsen er indehaver af McSafari. Stefan er opvokset i
+							Tanzania, men med stærke danske rødder har han nu bosat sig på
+							fyn. Stefan har kørt motorcykel hele hans voksne liv og er både
+							instruktør på offroad skolen, samt guide på mange af de ture
+							McSafari tilbyder! Udover at være en formidal guide og underviser
+							snakker han også flydende Swahilli, hvilket ofte viser sig som en
+							fordel på vores rejser
 						</p>
 
 						<img

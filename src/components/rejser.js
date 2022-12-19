@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 
 import Hero from '../img_mcsafari/rejse1.png';
 import rejse2 from '../img_mcsafari/rejse2.png';
-import rejse3 from '../img_mcsafari/rejse3.png';
-import rejse4 from '../img_mcsafari/rejse4.png';
 
 import Travels from './travels';
 import SubHeader from './sectionHeader';
@@ -20,10 +18,6 @@ function Rejser() {
 	const [newDate, setNewDate] = useState(0);
 	const [trips, setTrips] = useState([]);
 	const tripsCollectionRef = collection(db, 'Products');
-
-	const createTrip = async () => {
-		await addDoc(tripsCollectionRef, { location: newTrip, date: newDate });
-	};
 
 	useEffect(() => {
 		const getTrips = async () => {
@@ -46,10 +40,12 @@ function Rejser() {
 				<SubHeader title='Rejser du ikke vil glemme!' />
 
 				<p>
-					Hos McSafari har vi et bredt udvalg af rejser! Vi tilbyder ture med både danske og lokale guides! Der bliver heletiden tilføjet nye rejser, så kan du ikke finde en der passer i din kalender skal du blot vende tilbage igen snarest muligt! 
-					<br/> I mellemtiden kan du tage et kig på vores offroad skole, og blive klar til et vildt eventyr!
-					
-					{' '}
+					Hos McSafari har vi et bredt udvalg af rejser! Vi tilbyder ture med
+					både danske og lokale guides! Der bliver heletiden tilføjet nye
+					rejser, så kan du ikke finde en der passer i din kalender skal du blot
+					vende tilbage igen snarest muligt!
+					<br /> I mellemtiden kan du tage et kig på vores offroad skole, og
+					blive klar til et vildt eventyr!{' '}
 				</p>
 
 				<ButtonPrim
@@ -72,20 +68,19 @@ function Rejser() {
 							/>
 						);
 					})}
-					
 				</div>
-
-				
 			</div>
 
-			<div className='video'><iframe
-						width='100%'
-						height='100%'
-						src='https://www.youtube.com/embed/EnUtUDAUf9Y'
-						title='YouTube video player'
-						frameborder='0'
-						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-						allowfullscreen></iframe></div>
+			<div className='video'>
+				<iframe
+					width='100%'
+					height='100%'
+					src='https://www.youtube.com/embed/EnUtUDAUf9Y'
+					title='YouTube video player'
+					frameborder='0'
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+					allowfullscreen></iframe>
+			</div>
 
 			<AboutStefan />
 		</div>
